@@ -403,7 +403,7 @@ body {
 }
 
 #skuffe {
-    margin-bottom: 10em;
+    margin-bottom: 8em;
 }
 
 #personligside {
@@ -418,12 +418,57 @@ body {
     margin-right: 10%; 
     width: 80%; 
     text-align: left;
+    padding-bottom: 10%;
 }
 
 #materialer {
-    margin-bottom: 0%; 
+    margin-bottom: 4%; 
+    padding-top: 5%;
     padding-bottom: 0%;
+    font-family: "IvyJournal"; 
+    font-weight: 600; 
+    font-size: 2em; 
+    text-align: center;
 }
+
+#personligside h2 {
+    padding-top: 20%;
+}
+
+.flex-materialer h3 {
+    font-family: "Montserrat";
+    font-weight: 900;
+}
+
+.flex-materialer { padding: 5%;}
+
+#skuffe {
+    max-width: 80%; 
+    padding-top: 10%;
+}
+
+.flex-tre {
+    display: flex; 
+    width: 100%; 
+    text-align: center; 
+    background: repeating-linear-gradient(#f3f1ee, #f3f1ee 49.9%, #ffffff 50.1%, #ffffff 100%);
+    padding-bottom: 0%; 
+    
+}
+
+.flex-tre div {
+    width: 20%;
+}
+
+.flex-tre h3 {
+    text-align: center; 
+    font-family: "IvyJournal"; 
+    position: relative; 
+}
+.flex-tre img {
+    max-width: 6em;
+}
+
 
 .tilbyderknap {
     margin-top: 5%;
@@ -443,7 +488,9 @@ body {
     color: white;
 }
 
-#infographic img {text-align: center;}
+#infographic img {
+    text-align: center; 
+    max-width: 60%;}
 
 #flexfooter {background: #f3f1ee;}
 
@@ -897,12 +944,7 @@ footer {
     }
 
      /*vi tilbyder side tablet---------------------------------------------------------------*/ 
-     .flex-tre {display: flex; width: 100%; text-align: center; 
-        background: repeating-linear-gradient(#f3f1ee, #f3f1ee 49.9%, #ffffff 50.1%, #ffffff 100%)
-    }
-    .flex-tre div {width: 20%;}
-    .flex-tre h3 {text-align: center; font-family: "IvyJournal"; position: relative; }
-    .flex-tre img {max-width: 11em;}
+     
     .tilbyderknap {
         margin-top: 5%;
         background-color: #7c3b1e;
