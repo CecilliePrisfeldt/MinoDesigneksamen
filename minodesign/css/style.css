@@ -173,7 +173,7 @@ body {
 /*
  * burgermenu
  */
-
+ 
 
 /* mød os kode navigation og burgermenu
 ----------------------------------------------------------------------------*/
@@ -209,6 +209,108 @@ body {
 
 /* mød os burgermenu ------ */
 
+#menuclose1 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 13px;
+    right: 27px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuToggle1 {
+    display: block;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuopen1 {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+#menuToggle1 span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #f3f1ee;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle1 span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle1 span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuopen1:focus~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #fff;
+}
+
+#menuopen1:focus~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuopen1:focus~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu1 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    right: -30px;
+    top: -30px;
+    margin: 0;
+    padding: 0;
+    background: #7c3b1e;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu1 li {
+    padding: 10px 0;
+    font-size: 22px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#menu1 li a {
+    color: #ffff;
+    text-decoration: none;
+    font-family: "montserrat";
+}
+
+#menuopen1:focus~ul {
+    transform: none;
+}
 
 /* mød os 
 -----------------------------------------------------------------------------*/
@@ -271,7 +373,9 @@ body {
 #gif {
     background:url('../image/cinemagraphic.gif') 100% 100% fixed;
     height:100%;
-    width:100%; background-repeat: no-repeat; background-size: cover;
+    width:100%; 
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 
 .overskriftvitilbyder {
@@ -298,11 +402,28 @@ body {
     background-color: #f3f1ee;
 }
 
-#skuffe {margin-bottom: 10em;}
-#personligside {background-color: #ffffff; padding-top: 0%; margin-top: 0%;}
+#skuffe {
+    margin-bottom: 10em;
+}
 
-#personligside p {margin-top: 0%; padding-top: 0%; margin-left: 10%; margin-right: 10%; width: 80%; text-align: left;}
-#materialer {margin-bottom: 0%; padding-bottom: 0%;}
+#personligside {
+    background-color: #ffffff; 
+    padding-top: 0%; 
+    margin-top: 0%;}
+
+#personligside p {
+    margin-top: 0%; 
+    padding-top: 0%; 
+    margin-left: 10%; 
+    margin-right: 10%; 
+    width: 80%; 
+    text-align: left;
+}
+
+#materialer {
+    margin-bottom: 0%; 
+    padding-bottom: 0%;
+}
 
 .tilbyderknap {
     margin-top: 5%;
