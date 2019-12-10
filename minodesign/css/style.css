@@ -458,16 +458,6 @@ a {
     margin: 0 auto;
 }
 
-.form {
-    position: relative;
-    z-index: 1;
-    max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-    background: #ffffff;
-}
-
 .form input {
     font-family: "montserrat";
     outline: 1;
@@ -814,6 +804,9 @@ footer {
     #tidslinje img {
         padding-top: 10%;
     }
+
+    
+
     /* footer
 -----------------------------------------------------------------------------*/
     #flexfooter {
@@ -946,7 +939,8 @@ footer {
         color: #7c3b1e
     }
     /* mød os kode navigation og burgermenu
-----------------------------------------------------------------------------*/
+    ------------------------------------------------------------------------*/
+
     /* mød os desktop menu ---- */
     #navmobil1 {
         display: none;
@@ -996,14 +990,16 @@ footer {
     #navpc1 ul li a:hover {
         color: black;
     }
+
     /* mød os burgermenu ------ */
+
     /* mød os
----------------------------------------------------------------------------*/
+    ---------------------------------------------------------------------------*/
     #carstenogpeter img {
         width: 45%;
     }
     /* Tekst
------------------------------------------------------------------------------*/
+    -----------------------------------------------------------------------------*/
     .overskriften {
         font-family: ivyjournal, sans-serif;
         color: #7c3b1e;
@@ -1240,6 +1236,13 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* Login
+    ------------------------------------------------------------------------*/
+.form {
+    position: relative;
+}
+
     /* Footer
 -----------------------------------------------------------------------------*/
     #flexfooter {
