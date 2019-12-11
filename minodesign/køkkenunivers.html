@@ -119,6 +119,34 @@
             <div> <img src="image/tidslinje.png" alt="Tidslinje for indhent tilbud proces"></div>
         </section>
 
+        <!----messenger knap-->
+
+        <button class="open-button" onclick="openForm()">CHAT</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h3>CHAT MED MINO DESIGN</h3>
+
+    <label for="msg"><b>Send os en besked her:</b></label>
+    <textarea placeholder="Skriv besked..." name="msg" required></textarea>
+
+    <button type="submit" class="btn">SEND</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">LUK</button>
+  </form>
+</div>
+
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+    
+
+</main>
 </body>
 
 </html>
