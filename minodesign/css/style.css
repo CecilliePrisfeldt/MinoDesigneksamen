@@ -371,8 +371,8 @@ body {
 -----------------------------------------------------------------------------*/
 /*Gif baggrund*/
 #gif {
-    background: url('../image/cinemagraphic.gif') 100% 100% fixed;
-    height: 100%;
+    background: url('../image/mobilcinemagraphic.gif') 100% 100% fixed;
+    height: auto;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -405,6 +405,8 @@ body {
 
 #skuffe {
     margin-bottom: 8em;
+    max-width: 80%;
+    padding-top: 10%;
 }
 
 #personligside {
@@ -446,10 +448,7 @@ body {
     padding: 5%;
 }
 
-#skuffe {
-    max-width: 80%;
-    padding-top: 10%;
-}
+
 
 .flex-tre {
     display: flex;
@@ -495,7 +494,8 @@ body {
 
 #infographic img {
     text-align: center;
-    max-width: 60%;
+    margin: auto;
+    max-width: 100%;
 }
 
 #flexfooter {
@@ -966,6 +966,13 @@ footer {
 
     /*vi tilbyder side tablet---------------------------------------------------------------*/
 
+    #gif {
+        background: url('../image/tabletcinemagraphic.gif') 100% 100% fixed;
+        height: auto;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     .overskriftvitilbyder {
         font-size: 5em;
@@ -1018,6 +1025,8 @@ footer {
         color: white;
     }
 
+    #infographic img {display: block; margin: auto; justify-content: center;}
+
     /* se mere knap og album knap
     ------------------------------------------------------------------------*/
     #semereknap1 button {
@@ -1033,7 +1042,7 @@ footer {
     }
 
     #tidslinje img {
-        padding-top: 10%;
+        padding-top: 10%; text-align: center;
     }
 
 
@@ -1453,6 +1462,15 @@ footer {
     }
 
     /*vi tilbyder side desktop---------------------------------------------------------------*/
+    
+    #gif {
+        background: url('../image/cinemagraphic.gif') 100% 100% fixed;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .overskriftvitilbyder {
         font-family: "ivyJournal";
         color: #ffffff;
@@ -1495,17 +1513,15 @@ footer {
     }
 
     .flex-materialer p {
-        margin: 5%;
-        padding-left: 5%;
+        margin-left: 5%;  
+        line-height: 2em; 
+        font-size: 1.2em;
     }
 
     .flex-materialer h3 {
         padding-left: 5%;
         font-weight: 600;
     }
-
-    
-    
 
     
     #skuffe img {
@@ -1517,7 +1533,27 @@ footer {
    
     
 
+    #personligside {
+        padding: 0%;
+        margin: 0%;
+        
+    }
+    
+    #personligside p {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        text-align: left;
+        padding-bottom: 5%;
+        font-size: 1.2em;
 
+    }
+
+    #personligside h2 {
+        padding-top: 15%;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
 
     .tilbyderknap {
         position: relative;
@@ -1526,11 +1562,11 @@ footer {
         border: none;
         color: white;
         cursor: pointer;
-        padding: 1%;
         width: 10%;
-        margin-left: 8%;
+        margin-left: 5%;
+        padding-left: 0%;
         font-size: 1em;
-        justify-content: center;
+     text-align: left;
     }
 
     .tilbyderknap a:hover {
@@ -1540,6 +1576,8 @@ footer {
     .tilbyderknap>a:visited {
         color: white;
     }
+
+    #infographic {display: block; text-align: center; max-width: 80%; max-width: 80%; margin: auto;}
 
     /* se mere knap og album knap
     ------------------------------------------------------------------------*/
