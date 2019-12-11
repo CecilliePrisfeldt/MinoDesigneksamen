@@ -168,11 +168,7 @@ body {
 #menuopen:focus~ul {
     transform: none;
 }
-
-
-/*
- * burgermenu
- */
+ 
 
 
 /* mød os kode navigation og burgermenu
@@ -188,11 +184,14 @@ body {
 #navmobil1 {
     display: inline-block;
     color: #3c312e;
+    
 }
 
 #navpc1 {
     display: none;
+    font-size: 1.3em;
     text-decoration: none;
+    font-family: montserrat, sans-serif;
 }
 
 #navpc1 ul li {
@@ -369,7 +368,8 @@ body {
 
 /* vi tilbyder side (Janne)
 -----------------------------------------------------------------------------*/
-/*Gif baggrund*/
+
+/*Gif baggrund*/ 
 #gif {
     background: url('../image/mobilcinemagraphic.gif') 100% 100% fixed;
     height: auto;
@@ -670,7 +670,11 @@ a {
 
 .form button:hover,
 .form button:active {
-    background-color: #89573b;
+    background-color: #3c312a;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
 }
 
 .form .message {
@@ -680,7 +684,7 @@ a {
 }
 
 .form .message a {
-    color: black;
+    color: #3c312a; 
     text-decoration: none;
 }
 
@@ -692,7 +696,7 @@ a {
 /* Køkkenunivers
 ----------------------------------------------------------------------------*/
 
-#køkkenunivers h2 {
+#koekkenunivers h2 {
     margin: 0 auto;
     padding: 0% 0% 1.5% 0%;
     text-align: center;
@@ -701,7 +705,7 @@ a {
     font-size: 20px;
 }
 
-#køkkenunivers p {
+#koekkenunivers p {
     margin: 0 auto;
     padding: 0 6.5% 0 6.5%;
     line-height: 30px;
@@ -746,6 +750,7 @@ a {
 #semereknap1 {
     margin-bottom: 15%;
 }
+
 
 #semereknap2 button {
     background-color: #7c3b1e;
@@ -957,8 +962,7 @@ footer {
         text-align: left;
         font-size: 13px;
     }
-
-    #køkkenunivers p {
+    #koekkenunivers p {
         margin: 0 auto;
         margin-bottom: 5%;
         padding: 0 6.5% 0 6.5%;
@@ -973,6 +977,7 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
     }
+<<<<<<<
 
     .overskriftvitilbyder {
         font-size: 5em;
@@ -1007,6 +1012,22 @@ footer {
     }
 
 
+=======
+    .flex-tre div {
+        width: 20%;
+    }
+
+    .flex-tre h3 {
+        text-align: center; 
+        font-family: "IvyJournal"; 
+        position: relative; 
+    }
+
+    .flex-tre img {
+        max-width: 11em;
+    }
+    
+>>>>>>>
     .tilbyderknap {
         margin-top: 5%;
         background-color: #7c3b1e;
@@ -1245,7 +1266,7 @@ footer {
         height: 2px;
         left: 50%;
         position: absolute;
-        background: black;
+        background: #3c312a;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
     }
@@ -1256,7 +1277,7 @@ footer {
     }
 
     #navpc1 ul li a:hover {
-        color: black;
+        color: #3c312a;
     }
 
     /* mød os burgermenu ------ */
@@ -1368,10 +1389,10 @@ footer {
     .button {
         font-family: montserrat, sans-serif;
         text-align: center;
-        color: #fff;
+        color: #f3f1ee;
         text-transform: uppercase;
         text-decoration: none;
-        background: #ed3330;
+        background: #7c3b1e;
         padding: 20px;
         border: none;
         transition: 0.4s ease;
@@ -1380,7 +1401,8 @@ footer {
     }
 
     .button:hover {
-        background: #434343;
+        background: #3c312a;
+        color: #f3f1ee;
         letter-spacing: 1px;
         -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
         -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
@@ -1431,7 +1453,7 @@ footer {
 
     /* køkkenunivers
     -----------------------------------------------------------------------*/
-    #køkkenunivers h2 {
+    #koekkenunivers h2 {
         padding: 0.5%;
         font-size: 45px;
     }
@@ -1453,8 +1475,7 @@ footer {
     #inspirationsbillede1 {
         margin: 1%;
     }
-
-    #køkkenunivers p {
+    #koekkenunivers p {
         margin: 0 auto;
         margin-bottom: 5%;
         padding: 0.5% 15% 0 15%;
@@ -1483,12 +1504,20 @@ footer {
         margin-bottom: 0%;
     }
 
+<<<<<<<
+
+=======
+.tekstvitilbyder {
+    text-align: right; 
+    padding-right: 16em; 
+    position: relative; 
+    margin-bottom: 15%; }
+>>>>>>>
 
     .tekstvitilbyder {
         text-align: right;
         padding-right: 7%;
         position: relative;
-        margin-bottom: 15%;
         
     }
 
@@ -1501,6 +1530,9 @@ footer {
         padding-left: 5%;
     }
 
+.flex-materialer section {
+    width: 48%;
+}
 
     .flex-materialer {
         display: flex;
@@ -1579,40 +1611,65 @@ footer {
 
     #infographic {display: block; text-align: center; max-width: 80%; max-width: 80%; margin: auto;}
 
-    /* se mere knap og album knap
-    ------------------------------------------------------------------------*/
-    #semereknap1 button {
-        padding: 0.5% 5% 0.5% 5%;
-        font-size: 13px;
-        margin-left: 2.5%;
-    }
+/* se mere knap og album knap
+------------------------------------------------------------------------*/
+    
+#semereknap1 button {
+    padding: 0.5% 5% 0.5% 5%;
+    font-size: 13px;
+    margin-left: 2.5%;
+}
 
-    #semereknap2 button {
-        padding: 0.5% 5% 0.5% 5%;
-        font-size: 13px;
-        margin-left: 2.5%;
-    }
+.semereknap1 :hover {
+    background: #3c312a;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+}
 
-    #tilbudknap button {
-        padding: 0.5% 5% 0.5% 5%;
-        font-size: 13px;
-        margin-left: 2.5%;
-    }
+#semereknap2 button {
+    padding: 0.5% 5% 0.5% 5%;
+    font-size: 13px;
+    margin-left: 2.5%;
+}
 
-    #tidslinje img {
-        width: 65%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.semereknap2 :hover {
+    background: #3c312a;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+}
 
-    /* Login
-    ------------------------------------------------------------------------*/
-    .form {
-        position: relative;
-    }
+#tilbudknap button {
+    padding: 0.5% 5% 0.5% 5%;
+    font-size: 13px;
+    margin-left: 2.5%;
+}
 
-    /* Footer
+.tilbudknap1 :hover {
+    background: #3c312a;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+}
+    
+#tidslinje img {
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Login
+------------------------------------------------------------------------*/
+.form {
+    position: relative;
+}
+
+/* Footer
 -----------------------------------------------------------------------------*/
     #flexfooter {
         display: flex;
@@ -1679,4 +1736,68 @@ footer {
     #showroom>p {
         font-size: 1.3em;
     }
+}
+
+#flexfooter>section {
+    margin: 5%;
+    
+}
+.luft {
+    flex: 1;
+}
+
+footer {
+    margin-bottom: 5%;
+    color: #3c312a;
+    font-size: 1em;
+    text-align: left;
+}
+
+.ikoner {
+    max-width: 15%;
+    margin-top: 15%;
+    margin-left: 2%;
+    justify-content: center;
+    width: 15%;
+}
+
+#socialemedier {
+    width: 30%;
+}
+
+#showroom {
+    width: 35%;
+    margin: 0;
+}
+
+#kontakt>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.3em;
+}
+
+#showroom>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.3em;
+}
+
+#socialemedier>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.3em;
+}
+    
+#kontakt>p {
+    font-size: 1.3em;
+}
+    
+#socialemedier>p {
+    font-size: 1.3em;
+}
+    
+#showroom>p {
+    font-size: 1.3em;
+}
+
 }
