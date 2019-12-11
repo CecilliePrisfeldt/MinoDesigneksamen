@@ -829,7 +829,6 @@ footer {
     font-size: 1.3em;
 }
 
-
 /* media
 -----------------------------------------------------------------------------*/
 
@@ -977,7 +976,6 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
     }
-<<<<<<<
 
     .overskriftvitilbyder {
         font-size: 5em;
@@ -1012,22 +1010,6 @@ footer {
     }
 
 
-=======
-    .flex-tre div {
-        width: 20%;
-    }
-
-    .flex-tre h3 {
-        text-align: center; 
-        font-family: "IvyJournal"; 
-        position: relative; 
-    }
-
-    .flex-tre img {
-        max-width: 11em;
-    }
-    
->>>>>>>
     .tilbyderknap {
         margin-top: 5%;
         background-color: #7c3b1e;
@@ -1070,72 +1052,63 @@ footer {
 
     /* footer
 -----------------------------------------------------------------------------*/
-    #flexfooter {
-        overflow: auto;
-    }
-
-    footer {
-        margin-bottom: 5%;
-        color: #3c312a;
-        font-family: montserrat, sans-serif;
-        margin-top: 5%;
-    }
-
-    .ikoner {
-        display: inline-block;
-        height: 50%;
-        width: 50%;
-        max-width: 7%;
-        margin-top: 4%;
-        justify-content: left;
-        margin-left: 0%;
-        padding: 1%;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    #kontakt {
-        float: left;
-        width: 50%;
-        text-align: left;
-        margin-left: 10%;
-        margin-top: 7%;
-    }
-
-    #showroom {
-        float: right;
-        width: 40%;
-        text-align: left;
-        margin-top: 7%;
-    }
-
-    #socialemedier {
-        float: left;
-        width: 50%;
-        text-align: left;
-        margin-top: 5%;
-        margin-left: 10%;
-    }
-
-    #kontakt>h4 {
-        font-weight: bold;
-        line-height: 3;
-        font-size: 1.8em;
-    }
-
-    #showroom>h4 {
-        font-weight: bold;
-        line-height: 3;
-        font-size: 1.8em;
-    }
-
-    #socialemedier>h4 {
-        font-weight: bold;
-        line-height: 3;
-        font-size: 1.8em;
-    }
+#flexfooter {
+    overflow: auto;
+}
+footer {
+    margin-bottom: 5%;
+    color: #3c312a;
+    font-family: montserrat, sans-serif;
+    margin-top: 5%;
+}
+.ikoner {
+    display: inline-block;
+    height: 50%;
+    width: 50%;
+    max-width: 7%;
+    margin-top: 4%;
+    justify-content: left;
+    margin-left: 0%;
+    padding: 1%;
+}
+a {
+    text-decoration: none;
+}
+#kontakt {
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 7%;
+}
+#showroom {
+    float: right;
+    width: 40%;
+    text-align: left;
+    margin-top: 7%;
+}
+#socialemedier {
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+#kontakt>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.8em;
+}
+#showroom>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.8em;
+}
+#socialemedier>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.8em;
+}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1504,15 +1477,6 @@ footer {
         margin-bottom: 0%;
     }
 
-<<<<<<<
-
-=======
-.tekstvitilbyder {
-    text-align: right; 
-    padding-right: 16em; 
-    position: relative; 
-    margin-bottom: 15%; }
->>>>>>>
 
     .tekstvitilbyder {
         text-align: right;
@@ -1671,88 +1635,21 @@ footer {
 
 /* Footer
 -----------------------------------------------------------------------------*/
-    #flexfooter {
-        display: flex;
-    }
-
-    #flexfooter>section {
-        margin: 5%;
-    }
-
-    .luft {
-        flex: 1;
-    }
-
-    footer {
-        margin-bottom: 5%;
-        color: #3c312a;
-        font-size: 1em;
-        text-align: left;
-    }
-
-    .ikoner {
-        max-width: 15%;
-        margin-top: 15%;
-        margin-left: 2%;
-        justify-content: center;
-        width: 15%;
-    }
-
-    #socialemedier {
-        width: 30%;
-    }
-
-    #showroom {
-        width: 35%;
-        margin: 0;
-    }
-
-    #kontakt>h4 {
-        font-weight: bold;
-        line-height: 3;
-        font-size: 1.3em;
-    }
-
-    #showroom>h4 {
-        font-weight: bold;
-        line-height: 3;
-        font-size: 1.3em;
-    }
-
-    #socialemedier>h4 {
-        font-weight: bold;
-        line-height: 3;
-        font-size: 1.3em;
-    }
-
-    #kontakt>p {
-        font-size: 1.3em;
-    }
-
-    #socialemedier>p {
-        font-size: 1.3em;
-    }
-
-    #showroom>p {
-        font-size: 1.3em;
-    }
+#flexfooter {
+    display: flex;
 }
-
 #flexfooter>section {
     margin: 5%;
-    
 }
 .luft {
     flex: 1;
 }
-
 footer {
     margin-bottom: 5%;
     color: #3c312a;
     font-size: 1em;
     text-align: left;
 }
-
 .ikoner {
     max-width: 15%;
     margin-top: 15%;
@@ -1760,42 +1657,34 @@ footer {
     justify-content: center;
     width: 15%;
 }
-
 #socialemedier {
     width: 30%;
 }
-
 #showroom {
     width: 35%;
     margin: 0;
 }
-
 #kontakt>h4 {
     font-weight: bold;
     line-height: 3;
     font-size: 1.3em;
 }
-
 #showroom>h4 {
     font-weight: bold;
     line-height: 3;
     font-size: 1.3em;
 }
-
 #socialemedier>h4 {
     font-weight: bold;
     line-height: 3;
     font-size: 1.3em;
 }
-    
 #kontakt>p {
     font-size: 1.3em;
 }
-    
 #socialemedier>p {
     font-size: 1.3em;
 }
-    
 #showroom>p {
     font-size: 1.3em;
 }
