@@ -369,14 +369,13 @@ body {
 /* vi tilbyder side (Janne)
 -----------------------------------------------------------------------------*/
 
-/*Gif baggrund*/ 
+/*Gif baggrund*/
+
 #gif {
-    background: url('../image/mobilcinemagraphic.gif') 100% 100% fixed;
-    height: auto;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+ width: 100%;
+  height: 400px;
+  background: url('../image/mobilcinemagraphic.gif');
+  background-size: 100% 100%;}
 
 .overskriftvitilbyder {
     font-family: "ivyJournal";
@@ -492,10 +491,10 @@ body {
     color: white;
 }
 
-#infographic img {
-    text-align: center;
-    margin: auto;
-    max-width: 100%;
+#infographic {
+   width: 100%; 
+   margin: 0 auto;
+   text-align: center;
 }
 
 #flexfooter {
@@ -832,6 +831,17 @@ footer {
 /* media
 -----------------------------------------------------------------------------*/
 
+
+@media only screen and (min-width: 550px) {
+
+    #gif {
+        background: url('../image/tabletcinemagraphic.gif');
+        width: 100%;
+        height: auto;
+       }
+
+}
+
 @media only screen and (min-width: 768px) {
 
     /* knap
@@ -970,12 +980,10 @@ footer {
     /*vi tilbyder side tablet---------------------------------------------------------------*/
 
     #gif {
-        background: url('../image/tabletcinemagraphic.gif') 100% 100% fixed;
-        height: auto;
+        background: url('../image/tabletcinemagraphic1.gif');
         width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+        height: auto;
+       }
 
     .overskriftvitilbyder {
         font-size: 5em;
@@ -1028,7 +1036,12 @@ footer {
         color: white;
     }
 
-    #infographic img {display: block; margin: auto; justify-content: center;}
+    #infographic {
+        display: block; 
+        margin: auto;
+        max-width: 80%;
+    
+    }
 
     /* se mere knap og album knap
     ------------------------------------------------------------------------*/
@@ -1457,13 +1470,12 @@ a {
 
     /*vi tilbyder side desktop---------------------------------------------------------------*/
     
+
     #gif {
-        background: url('../image/cinemagraphic.gif') 100% 100% fixed;
-        height: 100%;
         width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+         height: auto;
+         background: url('../image/desktopcinemagraphicstor.gif');
+        }
 
     .overskriftvitilbyder {
         font-family: "ivyJournal";
@@ -1573,7 +1585,11 @@ a {
         color: white;
     }
 
-    #infographic {display: block; text-align: center; max-width: 80%; max-width: 80%; margin: auto;}
+    #infographic {
+        display: block; 
+        text-align: center; 
+        max-width: 70%; 
+        margin: auto;}
 
 /* se mere knap og album knap
 ------------------------------------------------------------------------*/
