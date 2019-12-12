@@ -786,7 +786,7 @@ a {
 }
 
 /* Messenger -----------------------------------------*/
-* {box-sizing: border-box;}
+#messenger {box-sizing: border-box;}
 
 /* Knap til at åbne messenger - sat til at komme fra bunden */
 .open-button {
