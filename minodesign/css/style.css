@@ -170,6 +170,7 @@ body {
 }
  
 
+
 /* mød os kode navigation og burgermenu
 ----------------------------------------------------------------------------*/
 
@@ -368,14 +369,13 @@ body {
 /* vi tilbyder side (Janne)
 -----------------------------------------------------------------------------*/
 
-/*Gif baggrund*/ 
+/*Gif baggrund*/
+
 #gif {
-    background:url('../image/cinemagraphic.gif') 100% 100% fixed;
-    height:100%;
-    width:100%; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-}
+ width: 100%;
+  height: 400px;
+  background: url('../image/mobilcinemagraphic.gif');
+  background-size: 100% 100%;}
 
 .overskriftvitilbyder {
     font-family: "ivyJournal";
@@ -389,12 +389,13 @@ body {
 
 
 .tekstvitilbyder {
-    text-align: center; 
+    text-align: center;
     color: #ffffff;
     font-size: 1em;
     font-family: "montserrat";
     font-weight: 70;
-    text-align: center; position: relative;
+    text-align: center;
+    position: relative;
 }
 
 .flex-materialer {
@@ -402,27 +403,75 @@ body {
 }
 
 #skuffe {
-    margin-bottom: 10em;
+    margin-bottom: 8em;
+    max-width: 80%;
+    padding-top: 10%;
 }
 
 #personligside {
-    background-color: #ffffff; 
-    padding-top: 0%; 
-    margin-top: 0%;}
+    background-color: #ffffff;
+    padding-top: 0%;
+    margin-top: 0%;
+}
 
 #personligside p {
-    margin-top: 0%; 
-    padding-top: 0%; 
-    margin-left: 10%; 
-    margin-right: 10%; 
-    width: 80%; 
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
     text-align: left;
+    padding-bottom: 10%;
 }
 
 #materialer {
-    margin-bottom: 0%; 
+    margin-bottom: 4%;
+    padding-top: 5%;
     padding-bottom: 0%;
+    font-family: "IvyJournal";
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
 }
+
+#personligside h2 {
+    padding-top: 20%;
+}
+
+.flex-materialer h3 {
+    font-family: "Montserrat";
+    font-weight: 900;
+}
+
+.flex-materialer {
+    padding: 5%;
+}
+
+
+
+.flex-tre {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    background: repeating-linear-gradient(#f3f1ee, #f3f1ee 49.9%, #ffffff 50.1%, #ffffff 100%);
+    padding-bottom: 0%;
+
+}
+
+.flex-tre div {
+    width: 20%;
+}
+
+.flex-tre h3 {
+    text-align: center;
+    font-family: "IvyJournal";
+    position: relative;
+}
+
+.flex-tre img {
+    max-width: 6em;
+}
+
 
 .tilbyderknap {
     margin-top: 5%;
@@ -442,9 +491,15 @@ body {
     color: white;
 }
 
-#infographic img {text-align: center;}
+#infographic {
+   width: 100%; 
+   margin: 0 auto;
+   text-align: center;
+}
 
-#flexfooter {background: #f3f1ee;}
+#flexfooter {
+    background: #f3f1ee;
+}
 
 /* billeder
 ____________________________________________________________________________*/
@@ -730,6 +785,78 @@ a {
     padding-top: 10%;
 }
 
+/* Messenger -----------------------------------------*/
+* {box-sizing: border-box;}
+
+/* Knap til at åbne messenger - sat til at komme fra bunden */
+.open-button {
+  background-color: #7c3b1e;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* Popup chatten - skjult på default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Styling af form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Fulde vidde på tektområde */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* Når teksten fokuserer, gør noget */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Farve SEND knap */
+.form-container .btn {
+  background-color: #7c3b1e;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Baggrundsfarve LUK knap */
+.form-container .cancel {
+  background-color: #3c312a;
+}
+
+/* Tilføjet hover effekt */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
 
 /* Footer
 -----------------------------------------------------------------------------*/
@@ -773,16 +900,28 @@ footer {
     font-size: 1.3em;
 }
 
-
 /* media
 -----------------------------------------------------------------------------*/
 
+
+@media only screen and (min-width: 550px) {
+
+    #gif {
+        background: url('../image/tabletcinemagraphic.gif');
+        width: 100%;
+        height: auto;
+       }
+
+}
+
 @media only screen and (min-width: 768px) {
+
     /* knap
 -----------------------------------------------------------------------------*/
     a {
         text-decoration: none;
     }
+
     .opretknap {
         margin-top: 30%;
         background-color: #7c3b1e;
@@ -796,12 +935,15 @@ footer {
         font-size: 1em;
         text-align: center;
     }
+
     .opretknap>a:visited {
         color: white;
     }
+
     .knaptilbyder>a:visited {
         color: #3c312a;
     }
+
     .knaptilbyder {
         border: none;
         margin-top: 18%;
@@ -817,11 +959,13 @@ footer {
         text-align: center;
         text-decoration: none;
     }
+
     /* mød os
 ---------------------------------------------------------------------------*/
     .voreshistorietekst h1 {
         font-size: 40px;
     }
+
     .voreshistorietekst p {
         font-size: 30px;
         line-height: 45px;
@@ -846,6 +990,7 @@ footer {
         line-height: 1.2;
         display: block;
     }
+
     #forside>h3 {
         color: #3c312a;
         font-size: 1.6em;
@@ -855,6 +1000,7 @@ footer {
         line-height: 1.2;
         display: block;
     }
+
     .haandvaerktekst>h2 {
         font-family: ivyjournal, sans-serif;
         color: #fff;
@@ -864,6 +1010,7 @@ footer {
         font-weight: bold;
         display: block;
     }
+
     .haandvaerktekst>h3 {
         color: #fff;
         font-size: 1.6em;
@@ -877,6 +1024,7 @@ footer {
         display: block;
         margin: auto;
     }
+
     /* køkkenunivers
     --------------------------------------------------------------------------*/
     #spalte {
@@ -888,6 +1036,7 @@ footer {
         margin: 2%;
         margin-top: 0%;
     }
+
     #inspiration1 h3 {
         margin-left: 6.5%;
         margin-bottom: 0%;
@@ -900,27 +1049,47 @@ footer {
         padding: 0 6.5% 0 6.5%;
     }
 
-     /*vi tilbyder side tablet---------------------------------------------------------------*/ 
-     .flex-tre {
-        display: flex; 
-        width: 100%; 
-        text-align: center; 
-        background: repeating-linear-gradient(#f3f1ee, #f3f1ee 49.9%, #ffffff 50.1%, #ffffff 100%)
+    /*vi tilbyder side tablet---------------------------------------------------------------*/
+
+    #gif {
+        background: url('../image/tabletcinemagraphic1.gif');
+        width: 100%;
+        height: auto;
+       }
+
+    .overskriftvitilbyder {
+        font-size: 5em;
     }
+
+    .tekstvitilbyder {
+        padding-bottom: 14em;
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    #materialer {
+        font-size: 3em;
+    }
+
+    #skuffe img {
+        max-width: 70%;
+        text-align: center;
+        padding-top: 10%;
+    }
+
     .flex-tre div {
-        width: 20%;
+        width: 25%;
     }
 
     .flex-tre h3 {
-        text-align: center; 
-        font-family: "IvyJournal"; 
-        position: relative; 
+        font-size: 2em;
     }
 
     .flex-tre img {
-        max-width: 11em;
+        max-width: 10em;
     }
-    
+
+
     .tilbyderknap {
         margin-top: 5%;
         background-color: #7c3b1e;
@@ -934,8 +1103,16 @@ footer {
         font-size: 0.5em;
         text-align: center;
     }
+
     .tilbyderknap>a:visited {
         color: white;
+    }
+
+    #infographic {
+        display: block; 
+        margin: auto;
+        max-width: 80%;
+    
     }
 
     /* se mere knap og album knap
@@ -943,86 +1120,91 @@ footer {
     #semereknap1 button {
         font-size: 15px;
     }
+
     #semereknap2 button {
         font-size: 15px;
     }
+
     #tilbudknap button {
         font-size: 15px;
     }
+
     #tidslinje img {
-        padding-top: 10%;
+        padding-top: 10%; text-align: center;
     }
 
-    
+
 
     /* footer
 -----------------------------------------------------------------------------*/
-    #flexfooter {
-        overflow: auto;
-    }
-    footer {
-        margin-bottom: 5%;
-        color: #3c312a;
-        font-family: montserrat, sans-serif;
-        margin-top: 5%;
-    }
-    .ikoner {
-        display: inline-block;
-        height: 50%;
-        width: 50%;
-        max-width: 7%;
-        margin-top: 4%;
-        justify-content: left;
-        margin-left: 0%;
-        padding: 1%;
-    }
-    a {
-        text-decoration: none;
-    }
-    #kontakt {
-        float: left;
-        width: 50%;
-        text-align: left;
-        margin-left: 10%;
-        margin-top: 7%;
-    }
-    #showroom {
-        float: right;
-        width: 40%;
-        text-align: left;
-        margin-top: 7%;
-    }
-    #socialemedier {
-        float: left;
-        width: 50%;
-        text-align: left;
-        margin-top: 5%;
-        margin-left: 10%;
-    }
-    #kontakt>h4 {
-        font-weight: bold;
-        line-height: 3;
-        font-size: 1.8em;
-    }
-    #showroom>h4 {
-        font-weight: bold;
-        line-height: 3;
-        font-size: 1.8em;
-    }
-    #socialemedier>h4 {
-        font-weight: bold;
-        line-height: 3;
-        font-size: 1.8em;
-    }
+#flexfooter {
+    overflow: auto;
+}
+footer {
+    margin-bottom: 5%;
+    color: #3c312a;
+    font-family: montserrat, sans-serif;
+    margin-top: 5%;
+}
+.ikoner {
+    display: inline-block;
+    height: 50%;
+    width: 50%;
+    max-width: 7%;
+    margin-top: 4%;
+    justify-content: left;
+    margin-left: 0%;
+    padding: 1%;
+}
+a {
+    text-decoration: none;
+}
+#kontakt {
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 7%;
+}
+#showroom {
+    float: right;
+    width: 40%;
+    text-align: left;
+    margin-top: 7%;
+}
+#socialemedier {
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+#kontakt>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.8em;
+}
+#showroom>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.8em;
+}
+#socialemedier>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.8em;
+}
 }
 
 @media only screen and (min-width: 1024px) {
+
     /* header
 -----------------------------------------------------------------------------*/
     header {
         display: block;
         margin-bottom: 4%;
     }
+
     /* logo
 -----------------------------------------------------------------------------*/
     #logo {
@@ -1032,31 +1214,37 @@ footer {
         padding: 5%;
         margin: auto;
     }
+
     #logo>img {
         width: 100%;
         height: 100%;
     }
+
     /* navigation
 -----------------------------------------------------------------------------*/
     #navmobil {
         display: none;
     }
+
     #navpc {
         margin: auto;
         float: right;
         display: flex;
         padding: 5%;
     }
+
     #navpc>ul {
         display: flex;
         justify-content: space-evenly;
         text-decoration: none;
     }
+
     #navpc>ul>li {
         margin-bottom: 3%;
         list-style-type: none;
         margin-left: 27px;
     }
+
     #navpc>ul>li>a {
         text-decoration: none;
         color: #3c312a;
@@ -1067,6 +1255,7 @@ footer {
         position: relative;
         letter-spacing: 0.15em;
     }
+
     #navpc>ul>li>a:after {
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
@@ -1079,10 +1268,12 @@ footer {
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
     }
+
     #navpc>ul>li>a:hover:after {
         width: 100%;
         left: 0;
     }
+
     #navpc>ul>li>a:hover {
         color: #7c3b1e
     }
@@ -1094,22 +1285,26 @@ footer {
     #navmobil1 {
         display: none;
     }
+
     #navpc1 {
         margin: auto;
         float: right;
         display: flex;
         padding: 5%;
     }
+
     #navpc1 ul {
         display: flex;
         justify-content: space-evenly;
         text-decoration: none;
     }
+
     #navpc1 ul li {
         margin-bottom: 3%;
         list-style-type: none;
         margin-left: 27px;
     }
+
     #navpc1 ul li a {
         text-decoration: none;
         color: #f3f1ee;
@@ -1120,6 +1315,7 @@ footer {
         position: relative;
         letter-spacing: 0.15em;
     }
+
     #navpc1 ul li a:after {
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
@@ -1132,10 +1328,12 @@ footer {
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
     }
+
     #navpc1 ul li a:hover:after {
         width: 100%;
         left: 0;
     }
+
     #navpc1 ul li a:hover {
         color: #3c312a;
     }
@@ -1163,13 +1361,16 @@ footer {
         display: block;
         margin-bottom: 2%;
     }
+
     #forside {
         position: absolute;
     }
+
     #forsideto {
         display: inline-block;
         margin: auto;
     }
+
     #forside>h3 {
         color: #3c312a;
         font-size: 1.4em;
@@ -1181,15 +1382,18 @@ footer {
         display: block;
         margin-bottom: 2%;
     }
+
     .wrap {
         width: 100%;
         position: relative;
         height: 100%;
         display: inline-block;
     }
+
     .haandvaerktekst {
         width: 40%;
     }
+
     .haandvaerktekst>h2 {
         font-family: ivyjournal, sans-serif;
         color: #fff;
@@ -1201,6 +1405,7 @@ footer {
         width: 50%;
         line-height: 1.5;
     }
+
     .haandvaerktekst>h3 {
         font-family: montserrat, sans-serif;
         color: #fff;
@@ -1212,6 +1417,7 @@ footer {
         line-height: 1.5;
         font-weight: normal;
     }
+
     /* fotos
 -----------------------------------------------------------------------------*/
     .forsideillustration {
@@ -1221,6 +1427,7 @@ footer {
         margin-right: 5%;
         margin-top: 17%;
     }
+
     #haandvaerk {
         background-color: #7c3b1e;
         margin-top: 15%;
@@ -1228,11 +1435,13 @@ footer {
         width: 100%;
         display: flex;
     }
+
     #haandvaerk>img {
         max-width: 50%;
         width: 50%;
         margin: 6%;
     }
+
     /* button
 -----------------------------------------------------------------------------*/
     .button {
@@ -1248,6 +1457,7 @@ footer {
         transition-property: background, letter-spacing, box-shadow;
         cursor: pointer;
     }
+
     .button:hover {
         background: #3c312a;
         color: #f3f1ee;
@@ -1272,15 +1482,19 @@ footer {
         font-size: 1em;
         display: block;
     }
+
     .opretknap a:hover {
         background: #ceb28a;
     }
+
     .opretknap>a:visited {
         color: white;
     }
+
     .knaptilbyder>a:visited {
         color: #3c312a;
     }
+
     .knaptilbyder {
         position: absolute;
         background: #ceb28a;
@@ -1290,20 +1504,24 @@ footer {
         margin-left: 1%;
         font-size: 1em;
     }
+
     .knaptilbyder a:hover {
         background: #7c3b1e;
     }
+
     /* køkkenunivers
     -----------------------------------------------------------------------*/
     #koekkenunivers h2 {
         padding: 0.5%;
         font-size: 45px;
     }
+
     #inspiration1 h3 {
         margin: 0 auto;
         margin-left: 3%;
         font-size: 18px;
     }
+
     #spalte {
         display: flex;
         margin: 0 auto;
@@ -1311,6 +1529,7 @@ footer {
         padding-bottom: 0%;
         flex-wrap: inherit;
     }
+
     #inspirationsbillede1 {
         margin: 1%;
     }
@@ -1321,78 +1540,128 @@ footer {
         font-size: 20px;
     }
 
-/*vi tilbyder side desktop---------------------------------------------------------------*/
-.overskriftvitilbyder {
-    font-family: "ivyJournal";
-    color: #ffffff;
-    font-size: 4em;
-    text-align: right;
-    margin: 5%;
-    line-height: 1em;
-    font-weight: 600;
-    margin-right: 4em;
-    margin-top: 0em;
-    margin-bottom: 0%;
-}
+    /*vi tilbyder side desktop---------------------------------------------------------------*/
+    
+
+    #gif {
+        width: 100%;
+         height: auto;
+         background: url('../image/desktopcinemagraphicstor.gif');
+        }
+
+    .overskriftvitilbyder {
+        font-family: "ivyJournal";
+        color: #ffffff;
+        font-size: 6em;
+        text-align: right;
+        margin: 7%;
+        line-height: 1em;
+        font-weight: 600;
+        margin-top: 0em;
+        margin-bottom: 0%;
+    }
 
 
-.tekstvitilbyder {
-    text-align: right; 
-    padding-right: 16em; 
-    position: relative; 
-    margin-bottom: 15%; }
+    .tekstvitilbyder {
+        text-align: right;
+        padding-right: 7%;
+        position: relative;
+        
+    }
 
-#materialer {
-    font-size: 2em; 
-    color:#3c312a; 
-    font-family: "ivyJournal"; 
-    font-weight: 600; 
-    text-align: left; 
-    margin: 5%; 
-    padding-left: 5%;
-}
-
-.flex-materialer {
-    display: flex; 
-    width: 100%; 
-    padding-top: 5%;
-}
+    #materialer {
+        font-size: 3em;
+        color: #3c312a;
+        font-family: "ivyJournal";
+        font-weight: 600;
+        text-align: left;
+        padding-left: 5%;
+    }
 
 .flex-materialer section {
     width: 48%;
 }
 
-.flex-materialer p {
-    margin: 5%; 
-    padding-left: 5%;
-}
+    .flex-materialer {
+        display: flex;
+        width: 100%;
+        padding-top: 5%;
+    }
 
-.flex-materialer h3 {
-    padding-left: 5%; 
-    font-weight: 600; 
-}
+    .flex-materialer section {
+        width: 48%;
+    }
 
+    .flex-materialer p {
+        margin-left: 5%;  
+        line-height: 2em; 
+        font-size: 1.2em;
+    }
 
-.tilbyderknap {
-    position: relative;
-    margin-top: 5%;
-    background-color: #7c3b1e;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 1%;
-    width: 10%;
-    margin-left: 8%;
-    font-size: 1em;
-    justify-content: center;
-}
-.tilbyderknap a:hover {
-    background: #ceb28a;
-}
+    .flex-materialer h3 {
+        padding-left: 5%;
+        font-weight: 600;
+    }
 
-.tilbyderknap>a:visited {
-    color: white;
-}
+    
+    #skuffe img {
+        max-width: 100%; 
+        text-align: center;
+        padding-top: 10%;
+    }
+    
+   
+    
+
+    #personligside {
+        padding: 0%;
+        margin: 0%;
+        
+    }
+    
+    #personligside p {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        text-align: left;
+        padding-bottom: 5%;
+        font-size: 1.2em;
+
+    }
+
+    #personligside h2 {
+        padding-top: 15%;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+
+    .tilbyderknap {
+        position: relative;
+        margin-top: 5%;
+        background-color: #7c3b1e;
+        border: none;
+        color: white;
+        cursor: pointer;
+        width: 10%;
+        margin-left: 5%;
+        padding-left: 0%;
+        font-size: 1em;
+     text-align: left;
+    }
+
+    .tilbyderknap a:hover {
+        background: #ceb28a;
+    }
+
+    .tilbyderknap>a:visited {
+        color: white;
+    }
+
+    #infographic {
+        display: block; 
+        text-align: center; 
+        max-width: 70%; 
+        margin: auto;}
 
 /* se mere knap og album knap
 ------------------------------------------------------------------------*/
@@ -1457,22 +1726,18 @@ footer {
 #flexfooter {
     display: flex;
 }
-
 #flexfooter>section {
     margin: 5%;
-    
 }
 .luft {
     flex: 1;
 }
-
 footer {
     margin-bottom: 5%;
     color: #3c312a;
     font-size: 1em;
     text-align: left;
 }
-
 .ikoner {
     max-width: 15%;
     margin-top: 15%;
@@ -1480,42 +1745,34 @@ footer {
     justify-content: center;
     width: 15%;
 }
-
 #socialemedier {
     width: 30%;
 }
-
 #showroom {
     width: 35%;
     margin: 0;
 }
-
 #kontakt>h4 {
     font-weight: bold;
     line-height: 3;
     font-size: 1.3em;
 }
-
 #showroom>h4 {
     font-weight: bold;
     line-height: 3;
     font-size: 1.3em;
 }
-
 #socialemedier>h4 {
     font-weight: bold;
     line-height: 3;
     font-size: 1.3em;
 }
-    
 #kontakt>p {
     font-size: 1.3em;
 }
-    
 #socialemedier>p {
     font-size: 1.3em;
 }
-    
 #showroom>p {
     font-size: 1.3em;
 }
