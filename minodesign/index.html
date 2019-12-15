@@ -10,9 +10,9 @@
     <meta name="author" content="Janne, Michala, Cathrine, Cecillie">
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/lei1wuh.css">
+    <link href="css/style.css" rel="stylesheet">
+
     <style>
         @import url("https://use.typekit.net/lei1wuh.css");
     </style>
@@ -51,7 +51,7 @@
                         <li> <a href="vitilbyder.html">VI TILBYDER</a></li>
                         <li><a href="moedos.html">MØD OS</a></li>
                         <li><a href="#kontakt">KONTAKT</a></li>
-                        <li><a href="login.html">LOGIN</a></li>
+                        <li><a href="login.html">MIN SIDE</a></li>
                     </ul>
                 </div>
             </nav>
@@ -62,7 +62,7 @@
                     <li> <a href="vitilbyder.html">VI TILBYDER</a></li>
                     <li><a href="moedos.html">MØD OS</a></li>
                     <li><a href="#kontakt">KONTAKT</a></li>
-                    <li><a href="login.html">LOG IN</a></li>
+                    <li><a href="login.html">MIN SIDE</a></li>
                 </ul>
             </nav>
         </header>
@@ -70,8 +70,10 @@
     <main>
 
         <div class="wrap">
-
-            <img class="forsideillustration" src="image/koekkenmino.png" alt="koekken illustration">
+            <picture class="forsideillustration">
+                <source srcset="image/koekkenmino.png" media="(min-width: 768px)">
+                <img class="forsideillustration" src="image/koekkenminomobil.png" alt="koekken illustration">
+            </picture>
 
             <div id="forside">
                 <h1 class="overskriften">VI LEVERER BÆREDYGTIGE <br> OG PERSONLIGE SNEDKERKØKKENER</h1>
@@ -79,14 +81,16 @@
 
                 <h3>Vi designer efter dine specifikke ønsker. <br> Upload din inspiration i dit køkkenunivers <br> og modtag et uforpligtende tilbud.</h3>
 
-                <a href="login.html" class="button opretknap">OPRET DIG HER</a>
+                <a href="login.html#register" class="button opretknap">OPRET DIG HER</a>
             </div>
 
         </div>
 
         <section id="haandvaerk">
-
-            <img src="image/minosnedker.jpg" alt="Mino design snedker køkken">
+            <picture id="haandvaerkbillede">
+                <source srcset="image/minosnedker.jpg" media="(min-width: 768px)">
+                <img src="image/minosnedkermobil.jpg" alt="Mino design snedker køkken">
+            </picture>
 
             <div class="haandvaerktekst">
                 <h2>KVALITET OG HÅNDVÆRK</h2>
